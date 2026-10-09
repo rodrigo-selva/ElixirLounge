@@ -1,0 +1,21 @@
+---
+import info from '../data/info.json';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-white/10 px-4 py-10 text-center">
+  <p class="divider-brand text-xs uppercase tracking-[0.3em] text-acento/80">{info.nombre}</p>
+
+  <ul class="mt-5 flex justify-center gap-6 text-sm text-texto/60">
+    {info.redes.map((red) => (
+      <li>
+        <a href={red.url} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-acento">
+          {red.nombre}
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <p class="mt-6 text-xs text-texto/40">© {year} {info.nombre}. Todos los derechos reservados.</p>
+</footer>

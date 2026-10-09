@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import info from '../data/info.json';
+
+const accesos = [
+  { href: '/carta', titulo: 'Carta', texto: 'Cervezas, cócteles, copas, sin alcohol y vinos.' },
+  { href: '/horarios', titulo: 'Horarios y ubicación', texto: 'Cuándo y dónde encontrarnos.' },
+  { href: '/contacto', titulo: 'Reservas', texto: 'WhatsApp, llamada y redes sociales.' },
+];
+---
+
+<Layout>
+  <Header />
+  <main>
+    <section class="relative flex min-h-[80vh] flex-col items-center justify-center overflow-hidden px-4 text-center">
+      <div
+        class="pointer-events-none absolute left-1/2 top-1/2 h-[28rem] w-[28rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-acento/15 blur-[100px]"
+        aria-hidden="true"
+      ></div>
+
+      <div class="reveal relative">
+        <h1 class="font-titulo text-4xl font-light uppercase tracking-[0.15em] text-acento md:text-6xl">
+          {info.nombre}
+        </h1>
+        <p class="divider-brand mt-3 text-xs uppercase tracking-[0.4em] text-texto/60">Lounge</p>
+        <p class="mt-6 max-w-md text-lg text-texto/80">{info.descripcion}</p>
+        <a
+          href="/carta"
+          class="mt-8 inline-block rounded-full bg-acento px-8 py-3 font-semibold text-fondo transition hover:scale-105 hover:shadow-[0_0_30px_rgb(212_162_76_/_0.5)]"
+        >
+          Ver carta
+        </a>
+      </div>
+    </section>
+
+    <section class="mx-auto grid max-w-5xl gap-6 px-4 pb-24 md:grid-cols-3">
+      {accesos.map((acceso, i) => (
+        <a
+          href={acceso.href}
+          class="reveal group rounded-2xl border border-white/10 bg-superficie p-6 transition duration-300 hover:-translate-y-1 hover:border-acento hover:shadow-[0_8px_30px_rgb(0_0_0_/_0.4)]"
+          style={`transition-delay: ${i * 100}ms`}
+        >
+          <h2 class="mb-2 font-titulo text-2xl text-acento transition group-hover:tracking-wide">
+            {acceso.titulo}
+          </h2>
+          <p class="text-texto/70">{acceso.texto}</p>
+        </a>
+      ))}
+    </section>
+  </main>
+  <Footer />
+</Layout>

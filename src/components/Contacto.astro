@@ -1,0 +1,41 @@
+---
+import info from '../data/info.json';
+
+const whatsappUrl = `https://wa.me/${info.whatsapp}?text=${encodeURIComponent(info.whatsappMensaje)}`;
+const telefonoUrl = `tel:${info.telefono.replace(/\s/g, '')}`;
+---
+
+<section class="px-4 py-16 text-center">
+  <div class="reveal mx-auto max-w-3xl">
+    <h2 class="mb-4 font-titulo text-4xl text-acento">Reservas y grupos</h2>
+    <p class="mb-8 text-texto/70">Escríbenos o llámanos para reservar mesa o montar tu grupo.</p>
+
+    <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-500 sm:w-auto"
+      >
+        WhatsApp
+      </a>
+      <a
+        href={telefonoUrl}
+        class="w-full rounded-full border border-acento px-6 py-3 font-semibold text-acento transition hover:bg-acento hover:text-fondo sm:w-auto"
+      >
+        Llamar {info.telefono}
+      </a>
+    </div>
+
+    <h3 class="mt-16 mb-4 font-titulo text-2xl">Síguenos</h3>
+    <ul class="flex justify-center gap-6 text-sm">
+      {info.redes.map((red) => (
+        <li>
+          <a href={red.url} target="_blank" rel="noopener noreferrer" class="transition-colors hover:text-acento">
+            {red.nombre}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

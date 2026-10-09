@@ -1,0 +1,277 @@
+{
+  "categorias": [
+    {
+      "id": "cervezas",
+      "nombre": "Cervezas",
+      "subcategorias": [
+        {
+          "nombre": "Cerveza",
+          "productos": [
+            { "nombre": "Heineken", "precios": [{ "valor": 3 }] },
+            { "nombre": "Heineken 00", "precios": [{ "valor": 3 }] },
+            { "nombre": "Mahou 00 tostada", "precios": [{ "valor": 3 }] },
+            { "nombre": "Radler", "precios": [{ "valor": 3 }] },
+            { "nombre": "Quinto Mahou 5 estrellas", "precios": [{ "valor": 2 }] },
+            { "nombre": "Tercio Mahou clásica", "precios": [{ "valor": 3 }] },
+            { "nombre": "Tercio Mahou 5 estrellas", "precios": [{ "valor": 3 }] },
+            { "nombre": "Mahou sin gluten tercio", "precios": [{ "valor": 3 }] }
+          ]
+        },
+        {
+          "nombre": "Cerveza especial",
+          "productos": [
+            { "nombre": "Corona", "precios": [{ "valor": 4 }] },
+            { "nombre": "Corona 00", "precios": [{ "valor": 4 }] },
+            { "nombre": "Desperados", "precios": [{ "valor": 4 }] },
+            { "nombre": "Stella Artois", "precios": [{ "valor": 4 }] },
+            { "nombre": "Leffe", "precios": [{ "valor": 4 }] },
+            { "nombre": "Paulaner", "precios": [{ "valor": 4 }] },
+            { "nombre": "Guinness", "precios": [{ "valor": 4 }] },
+            { "nombre": "Budweiser", "precios": [{ "valor": 4 }] },
+            { "nombre": "Alhambra", "precios": [{ "valor": 4 }] },
+            { "nombre": "Beck's", "precios": [{ "valor": 4 }] },
+            { "nombre": "Franziskaner", "precios": [{ "valor": 4 }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cocteles",
+      "nombre": "Cócteles",
+      "subcategorias": [
+        {
+          "nombre": "Cócteles",
+          "productos": [
+            { "nombre": "Mojito", "descripcion": "Ron, lima, menta y soda", "precios": [] },
+            { "nombre": "Mix Kamikaze", "descripcion": "Vodka, triple seco y lima", "precios": [] },
+            { "nombre": "Mix Pornstar Martini", "descripcion": "Vodka, vainilla, maracuyá y prosecco", "precios": [] },
+            { "nombre": "Mix Strawberry Daiquiri", "descripcion": "Ron, fresa y lima", "precios": [] },
+            { "nombre": "Mix Piña Colada", "descripcion": "Ron, piña y coco", "precios": [] },
+            { "nombre": "Sex on the Beach", "descripcion": "Vodka, licor de melocotón y zumos", "precios": [] },
+            { "nombre": "Whisky Cola", "precios": [] },
+            { "nombre": "Vodka y Wildberry", "precios": [] },
+            { "nombre": "Mai Tai", "descripcion": "Ron, triple seco, orgeat y lima", "precios": [] },
+            { "nombre": "Vodka y Watermelon", "precios": [] }
+          ]
+        },
+        {
+          "nombre": "Smoothies sin alcohol",
+          "productos": [
+            { "nombre": "True Fruit amarillo", "descripcion": "Mango y maracuyá", "precios": [{ "valor": 8 }] },
+            { "nombre": "True Fruit rosa", "descripcion": "Pitaya rosa, guanábana y guayaba", "precios": [{ "valor": 8 }] },
+            { "nombre": "True Fruit morado", "descripcion": "Arándanos, frambuesa y grosella", "precios": [{ "valor": 8 }] },
+            { "nombre": "True Fruit menta", "descripcion": "Piña, menta y anacardo", "precios": [{ "valor": 8 }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "copas",
+      "nombre": "Copas",
+      "nota": "Si se le añade Red Bull de mezcla, se suma 1 €.",
+      "subcategorias": [
+        {
+          "nombre": "Whisky",
+          "productos": [
+            { "nombre": "Jack Daniel's", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 9 }] },
+            { "nombre": "DYC 8", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 9 }] },
+            { "nombre": "J&B", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "DYC", "precios": [{ "etiqueta": "Chupito", "valor": 2 }, { "etiqueta": "Copa", "valor": 4 }, { "etiqueta": "Cubata", "valor": 7 }] },
+            { "nombre": "Cutty Sark", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Ballantine's", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "White Label", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Jameson", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Red Label", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Red Soul", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Jack Daniel's Apple", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Jack Daniel's Fire", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Jack Daniel's Blackberry", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Jack Daniel's Honey", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Jack Daniel's Triple Mash", "precios": [{ "etiqueta": "Chupito", "valor": 6 }, { "etiqueta": "Copa", "valor": 8 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Jack Daniel's Single Barrel", "precios": [{ "etiqueta": "Chupito", "valor": 6 }, { "etiqueta": "Copa", "valor": 8 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Jack Daniel's Bonded", "precios": [{ "etiqueta": "Chupito", "valor": 6 }, { "etiqueta": "Copa", "valor": 8 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Chivas 12", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Carlos I", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "JB 15", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Black Ruby", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Black Label", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Cardhu 12", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Gold Label", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 14 }, { "etiqueta": "Cubata", "valor": 18 }] },
+            { "nombre": "Four Roses", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Tomatin", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Glenfiddich", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Lagavulin", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 12 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Hibiki", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 12 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Macallan 12", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 14 }, { "etiqueta": "Cubata", "valor": 18 }] }
+          ]
+        },
+        {
+          "nombre": "Vodka",
+          "productos": [
+            { "nombre": "Absolut", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Eristoff", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Smirnoff", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Grey Goose", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Belvedere", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Ciroc Melocotón", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Ciroc Mango", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Ciroc Normal", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Ciroc Piña", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Ciroc Manzana", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Absolut Tabasco", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Absolut Vainilla", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Finlandia", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] }
+          ]
+        },
+        {
+          "nombre": "Ron",
+          "productos": [
+            { "nombre": "Matusalem", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Barceló", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Havana Club", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Brugal", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Bardi", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Flor de Caña", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Barceló Imperial", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
+            { "nombre": "Zacapa Solera", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 16 }, { "etiqueta": "Cubata", "valor": 18 }] },
+            { "nombre": "Matusalem Solera", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
+            { "nombre": "Santa Teresa", "precios": [] },
+            { "nombre": "Legendary", "precios": [] },
+            { "nombre": "Brugal Extraviejo", "precios": [] },
+            { "nombre": "Flor de Caña Extra Seco", "precios": [] },
+            { "nombre": "Carlos I", "precios": [] },
+            { "nombre": "Lepanto 12", "precios": [] }
+          ]
+        },
+        {
+          "nombre": "Ginebra",
+          "productos": [
+            { "nombre": "Beefeater", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Larios", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Bombay Blanco", "precios": [] },
+            { "nombre": "Bombay Sapphire", "precios": [] },
+            { "nombre": "Tanqueray", "precios": [] },
+            { "nombre": "Tanqueray 00", "precios": [] },
+            { "nombre": "Martin Miller's", "precios": [] },
+            { "nombre": "G'Vine Juniper Green", "precios": [] },
+            { "nombre": "Bulldog", "precios": [] },
+            { "nombre": "Seagram's", "precios": [] },
+            { "nombre": "Citadelle", "precios": [] },
+            { "nombre": "Roku", "precios": [] },
+            { "nombre": "London 1", "precios": [] },
+            { "nombre": "London 3", "precios": [] },
+            { "nombre": "Mare", "precios": [] },
+            { "nombre": "Nordés", "precios": [] },
+            { "nombre": "Nordés 00", "precios": [] },
+            { "nombre": "Puerto de Indias Classic", "precios": [] },
+            { "nombre": "Larios 12", "precios": [] },
+            { "nombre": "Gin Guine Francés", "precios": [] },
+            { "nombre": "Roku Gin", "precios": [] },
+            { "nombre": "Hendrick's Classic", "precios": [] },
+            { "nombre": "Hendrick's Grand Cabaret", "precios": [] },
+            { "nombre": "Hendrick's Flora Adora", "precios": [] },
+            { "nombre": "Hendrick's Orbium", "precios": [] }
+          ]
+        },
+        {
+          "nombre": "Tequila",
+          "productos": [
+            { "nombre": "Tequila Reposado", "precios": [] },
+            { "nombre": "Don Julio", "precios": [] },
+            { "nombre": "Sombrero Mexicano", "precios": [] },
+            { "nombre": "José Cuervo", "precios": [] },
+            { "nombre": "Pistolero", "precios": [] }
+          ]
+        },
+        {
+          "nombre": "Licores",
+          "productos": [
+            { "nombre": "Chido", "precios": [] },
+            { "nombre": "Baileys", "precios": [] },
+            { "nombre": "Jägermeister naranja", "precios": [] },
+            { "nombre": "Jägermeister", "precios": [] },
+            { "nombre": "Disaronno", "precios": [] },
+            { "nombre": "Sheridan's", "precios": [] },
+            { "nombre": "Ponche", "precios": [] },
+            { "nombre": "Martini rojo", "precios": [] },
+            { "nombre": "Martini blanco", "precios": [] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sin-alcohol",
+      "nombre": "Sin alcohol",
+      "subcategorias": [
+        {
+          "nombre": "Refrescos",
+          "productos": [
+            { "nombre": "Coca-Cola Zero", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Coca-Cola", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Aquarius limón", "precios": [{ "valor": 3 }] },
+            { "nombre": "Aquarius naranja", "precios": [{ "valor": 3 }] },
+            { "nombre": "Fanta naranja", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Fanta limón", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Nestea", "precios": [{ "valor": 3 }] },
+            { "nombre": "Sprite", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Agua 33 cl", "precios": [{ "valor": 2 }] },
+            { "nombre": "Agua grande", "precios": [{ "valor": 3 }] },
+            { "nombre": "Red Bull sandía", "precios": [{ "valor": 3 }] },
+            { "nombre": "Red Bull", "precios": [{ "valor": 3 }] },
+            { "nombre": "Vichy", "precios": [{ "valor": 3 }] },
+            { "nombre": "Tónica", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de naranja", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de manzana", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de melocotón", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de piña", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de tomate", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de plátano", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Zumo de arándanos y uva", "precios": [{ "valor": 2.5 }] }
+          ]
+        },
+        {
+          "nombre": "Schweppes Premium",
+          "productos": [
+            { "nombre": "Ginger Ale", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Pomelo aromático", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Ginger Beer chile", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Soda", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Limón mediterráneo y quinina", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Naranja mediterránea y lichi", "precios": [{ "valor": 2.5 }] },
+            { "nombre": "Tónica y toque de lima", "precios": [{ "valor": 2.5 }] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vinos",
+      "nombre": "Vinos, cava y champagne",
+      "subcategorias": [
+        {
+          "nombre": "Champagne y cava",
+          "productos": [
+            { "nombre": "Champagne Humm", "precios": [{ "etiqueta": "Botella", "valor": 85 }] },
+            { "nombre": "Cava Raimat Reserva", "precios": [{ "etiqueta": "Botella", "valor": 45 }] },
+            { "nombre": "Segura Viudas Rosé Vintage", "precios": [{ "etiqueta": "Botella", "valor": 30 }] },
+            { "nombre": "Segura Viudas Gran Reserva", "precios": [{ "etiqueta": "Botella", "valor": 25 }] },
+            { "nombre": "Champagne Gramona", "precios": [{ "etiqueta": "Botella", "valor": 45 }] }
+          ]
+        },
+        {
+          "nombre": "Vinos",
+          "productos": [
+            { "nombre": "Lambrusco rosado", "precios": [{ "etiqueta": "Botella", "valor": 14 }, { "etiqueta": "Copa", "valor": 3 }] },
+            { "nombre": "Chardonnay Raimat (blanco)", "precios": [{ "etiqueta": "Botella", "valor": 20 }] },
+            { "nombre": "Ceramic Monastrell rosado", "precios": [{ "etiqueta": "Botella", "valor": 20 }, { "etiqueta": "Copa", "valor": 4 }] },
+            { "nombre": "Ceramic Sauvignon Blanc", "precios": [{ "etiqueta": "Botella", "valor": 20 }, { "etiqueta": "Copa", "valor": 4 }] },
+            { "nombre": "Emina Rosé Prestigio", "precios": [{ "etiqueta": "Botella", "valor": 25 }] },
+            { "nombre": "Ceramic Monastrell tinto", "precios": [{ "etiqueta": "Botella", "valor": 20 }, { "etiqueta": "Copa", "valor": 4 }] },
+            { "nombre": "El Miracle Blanco N03", "precios": [{ "etiqueta": "Botella", "valor": 20 }, { "etiqueta": "Copa", "valor": 4 }] },
+            { "nombre": "Azpilicueta Rioja tinto", "precios": [{ "etiqueta": "Botella", "valor": 18 }, { "etiqueta": "Copa", "valor": 4 }] },
+            { "nombre": "Montecillo Ribera del Duero", "precios": [{ "etiqueta": "Botella", "valor": 18 }, { "etiqueta": "Copa", "valor": 4 }] }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "nombre": "Elixir Lounge",
+  "descripcion": "Cócteles, cervezas y buen ambiente.",
+  "direccion": "Carrer del Mar, 03195 Alacant, Alicante",
+  "mapsUrl": "https://maps.google.com/?q=Elixir+Lounge+Carrer+del+Mar+03195+Alacant",
+  "mapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.290004230392!2d-0.5366539!3d38.2727698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd624b146024b75d%3A0x1384e4ef3d9752ff!2sElixir%20-%20Lounge!5e0!3m2!1ses-419!2ses!4v1791404819562!5m2!1ses-419!2ses",
+  "telefono": "+34 623 64 11 25",
+  "whatsapp": "34623641125",
+  "whatsappMensaje": "Hola, me gustaría reservar mesa.",
+  "horarios": [
+    { "dias": "Todos los días", "horas": "17:00 - 3:00" }
+  ],
+  "redes": [
+    { "nombre": "Instagram", "url": "https://www.instagram.com/elixir.lounge/" },
+    { "nombre": "TikTok", "url": "https://www.tiktok.com/@elixir.lounge_" }
+  ]
+}

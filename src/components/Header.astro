@@ -1,0 +1,45 @@
+---
+import info from '../data/info.json';
+
+const enlaces = [
+  { href: '/carta', texto: 'Carta' },
+  { href: '/horarios', texto: 'Horarios' },
+  { href: '/contacto', texto: 'Contacto' },
+];
+---
+
+<header id="site-header" class="sticky top-0 z-40 border-b border-white/10 bg-fondo/90 backdrop-blur">
+  <nav class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4">
+    <a
+      href="/"
+      class="whitespace-nowrap font-titulo text-sm font-light uppercase tracking-[0.12em] text-acento sm:text-lg sm:tracking-[0.2em]"
+    >
+      {info.nombre}
+    </a>
+    <ul class="flex gap-3 text-xs sm:gap-5 sm:text-sm">
+      {enlaces.map((enlace) => (
+        <li>
+          <a
+            href={enlace.href}
+            class="relative py-1 transition-colors hover:text-acento after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-acento after:transition-all after:duration-300 hover:after:w-full"
+          >
+            {enlace.texto}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<script>
+  function medirAlturaHeader() {
+    const header = document.getElementById('site-header');
+    if (!header) return;
+    document.documentElement.style.setProperty('--header-h', `${header.offsetHeight}px`);
+  }
+
+  medirAlturaHeader();
+  window.addEventListener('resize', medirAlturaHeader);
+  document.addEventListener('astro:page-load', medirAlturaHeader);
+  document.addEventListener('astro:after-swap', medirAlturaHeader);
+</script>

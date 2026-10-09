@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fondo: #0f0c0a;
+  --color-texto: #f5efe6;
+  --color-acento: #d4a24c;
+  --color-superficie: #1c1714;
+  --font-titulo: "Montserrat", system-ui, sans-serif;
+  --font-cuerpo: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-fondo text-texto font-cuerpo antialiased;
+  background-image:
+    radial-gradient(ellipse 60% 50% at 50% -10%, rgb(212 162 76 / 0.16), transparent),
+    radial-gradient(ellipse 50% 40% at 90% 20%, rgb(212 162 76 / 0.08), transparent);
+  background-attachment: fixed;
+}
+
+/* Textura sutil de grano para dar profundidad al fondo oscuro */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Separador dorado estilo logo: líneas a los lados del texto */
+.divider-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.divider-brand::before,
+.divider-brand::after {
+  content: "";
+  height: 1px;
+  width: 2.5rem;
+  background: linear-gradient(90deg, transparent, var(--color-acento));
+}
+.divider-brand::after {
+  background: linear-gradient(90deg, var(--color-acento), transparent);
+}
+
+/* Revelado suave al hacer scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Pulso suave del botón flotante de WhatsApp */
+@keyframes pulso-suave {
+  0%, 100% { box-shadow: 0 0 0 0 rgb(34 197 94 / 0.45); }
+  50% { box-shadow: 0 0 0 10px rgb(34 197 94 / 0); }
+}
+.pulso-whatsapp {
+  animation: pulso-suave 2.5s ease-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulso-whatsapp {
+    animation: none;
+  }
+}
