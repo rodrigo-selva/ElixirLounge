@@ -57,10 +57,10 @@
         {
           "nombre": "Smoothies sin alcohol",
           "productos": [
-            { "nombre": "True Fruit amarillo", "descripcion": "Mango y maracuyá", "precios": [{ "valor": 8 }] },
-            { "nombre": "True Fruit rosa", "descripcion": "Pitaya rosa, guanábana y guayaba", "precios": [{ "valor": 8 }] },
-            { "nombre": "True Fruit morado", "descripcion": "Arándanos, frambuesa y grosella", "precios": [{ "valor": 8 }] },
-            { "nombre": "True Fruit menta", "descripcion": "Piña, menta y anacardo", "precios": [{ "valor": 8 }] }
+            { "nombre": "True Fruit amarillo", "descripcion": "Mango, maracuyá, limón, plátano, manzana y naranja", "precios": [{ "valor": 8 }] },
+            { "nombre": "True Fruit rosa", "descripcion": "Pitaya rosa, guanábana, guayaba, plátano y manzana", "precios": [{ "valor": 8 }] },
+            { "nombre": "True Fruit morado", "descripcion": "Grosella roja, grosella negra, arándanos, frambuesa, naranja, plátano y manzana", "precios": [{ "valor": 8 }] },
+            { "nombre": "True Fruit menta", "descripcion": "Cúrcuma + espirulina, menta + lima, manzana de cajú, piña, plátano, naranja y manzana ", "precios": [{ "valor": 8 }] }
           ]
         }
       ]
