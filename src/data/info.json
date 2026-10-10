@@ -1,5 +1,5 @@
 {
-  "nombre": "Elixir Lounge",
+  "nombre": "E'lixir Lounge",
   "descripcion": "Cócteles, cervezas y buen ambiente.",
   "direccion": "Carrer del Mar, 03195 Alacant, Alicante",
   "mapsUrl": "https://maps.google.com/?q=Elixir+Lounge+Carrer+del+Mar+03195+Alacant",
@@ -12,6 +12,7 @@
   ],
   "redes": [
     { "nombre": "Instagram", "url": "https://www.instagram.com/elixir.lounge/" },
-    { "nombre": "TikTok", "url": "https://www.tiktok.com/@elixir.lounge_" }
+    { "nombre": "TikTok", "url": "https://www.tiktok.com/@elixir.lounge_" },
+    { "nombre": "Facebook", "url": "https://www.facebook.com/share/1DnNTLdZuf/" }
   ]
 }

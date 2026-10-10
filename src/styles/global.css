@@ -16,9 +16,32 @@ html {
 body {
   @apply bg-fondo text-texto font-cuerpo antialiased;
   background-image:
-    radial-gradient(ellipse 60% 50% at 50% -10%, rgb(212 162 76 / 0.16), transparent),
-    radial-gradient(ellipse 50% 40% at 90% 20%, rgb(212 162 76 / 0.08), transparent);
-  background-attachment: fixed;
+    radial-gradient(ellipse 60% 50% at 50% -10%, rgb(212 162 76 / 0.08), transparent),
+    radial-gradient(ellipse 50% 40% at 90% 20%, rgb(212 162 76 / 0.04), transparent);
+}
+
+/* Foto de fondo fija, en una capa a pantalla completa aparte del body (no un
+   background-image), para que el recorte dependa siempre del tamaño de la
+   pantalla y no del alto total de la página. */
+.fondo-foto {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  height: 100dvh;
+  overflow: hidden;
+  pointer-events: none;
+}
+.fondo-foto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+.fondo-foto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(15 12 10 / 0.78), rgb(15 12 10 / 0.84));
 }
 
 /* Textura sutil de grano para dar profundidad al fondo oscuro */

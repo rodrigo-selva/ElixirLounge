@@ -10,11 +10,11 @@ const enlaces = [
 
 <header id="site-header" class="sticky top-0 z-40 border-b border-white/10 bg-fondo/90 backdrop-blur">
   <nav class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4">
-    <a
-      href="/"
-      class="whitespace-nowrap font-titulo text-sm font-light uppercase tracking-[0.12em] text-acento sm:text-lg sm:tracking-[0.2em]"
-    >
-      {info.nombre}
+    <a href="/" class="flex items-center gap-2 whitespace-nowrap">
+      <img src="/images/logo-mark.png" alt="" class="h-8 w-8 rounded-full" />
+      <span class="font-titulo text-sm font-light uppercase tracking-[0.12em] text-acento sm:text-lg sm:tracking-[0.2em]">
+        {info.nombre}
+      </span>
     </a>
     <ul class="flex gap-3 text-xs sm:gap-5 sm:text-sm">
       {enlaces.map((enlace) => (
