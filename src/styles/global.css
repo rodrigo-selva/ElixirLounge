@@ -44,6 +44,26 @@ body {
   background: linear-gradient(rgb(15 12 10 / 0.78), rgb(15 12 10 / 0.84));
 }
 
+/* Segunda foto, superpuesta a la primera: su opacidad la controla el script
+   de scroll en Layout.astro para hacer un crossfade entre ambas. */
+#fondo-foto-2 {
+  opacity: 0;
+  will-change: opacity;
+}
+#fondo-foto-2 img {
+  object-position: center 35%;
+}
+@media (max-width: 640px) {
+  #fondo-foto-2 img {
+    object-position: 75% 35%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  #fondo-foto-2 {
+    transition: none;
+  }
+}
+
 /* Textura sutil de grano para dar profundidad al fondo oscuro */
 body::before {
   content: "";

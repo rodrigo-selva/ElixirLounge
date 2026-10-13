@@ -37,6 +37,9 @@ const {
     <div class="fondo-foto" aria-hidden="true">
       <img src="/images/fondo.jpg" alt="" />
     </div>
+    <div id="fondo-foto-2" class="fondo-foto" aria-hidden="true">
+      <img src="/images/fondo-2.jpg" alt="" />
+    </div>
     <slot />
     <WhatsappFloat />
     <script>
@@ -58,6 +61,36 @@ const {
 
       activarRevelado();
       document.addEventListener('astro:page-load', activarRevelado);
+
+      // Crossfade entre las dos fotos de fondo según el scroll: la segunda
+      // va apareciendo a medida que se baja por la página.
+      function activarCrossfadeFondo() {
+        const capa2 = document.getElementById('fondo-foto-2');
+        if (!capa2) return;
+
+        let ticking = false;
+        function actualizar() {
+          ticking = false;
+          const recorrido = document.documentElement.scrollHeight - window.innerHeight;
+          const progreso = recorrido > 0 ? window.scrollY / recorrido : 0;
+          // La transición ocurre en el primer tercio del recorrido de la página.
+          const opacidad = Math.min(1, Math.max(0, progreso / 0.33));
+          capa2.style.opacity = String(opacidad);
+        }
+        function solicitarActualizacion() {
+          if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(actualizar);
+          }
+        }
+
+        actualizar();
+        window.addEventListener('scroll', solicitarActualizacion, { passive: true });
+        window.addEventListener('resize', solicitarActualizacion);
+      }
+
+      activarCrossfadeFondo();
+      document.addEventListener('astro:page-load', activarCrossfadeFondo);
     </script>
   </body>
 </html>

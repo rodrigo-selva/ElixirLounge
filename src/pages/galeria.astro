@@ -1,0 +1,127 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import info from '../data/info.json';
+
+const dir = path.join(process.cwd(), 'public/images/galeria');
+const fotos = fs
+  .readdirSync(dir)
+  .filter((f) => f.toLowerCase().endsWith('.jpg'))
+  .sort();
+---
+
+<Layout title={`Galería | ${info.nombre}`} description={`Fotos del local de ${info.nombre}.`}>
+  <Header />
+  <main>
+    <h1 class="pt-12 text-center font-titulo text-5xl text-acento">Galería</h1>
+    <p class="mt-3 text-center text-texto/60">Un vistazo al local.</p>
+
+    <div class="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-3 px-4 pb-24 sm:grid-cols-3 md:grid-cols-4">
+      {fotos.map((foto, i) => (
+        <button
+          type="button"
+          data-foto-index={i}
+          class="galeria-item reveal group aspect-square overflow-hidden rounded-xl border border-white/10"
+          style={`transition-delay: ${(i % 8) * 60}ms`}
+          aria-label={`Ampliar foto ${i + 1}`}
+        >
+          <img
+            src={`/images/galeria/${foto}`}
+            alt={`${info.nombre} — foto ${i + 1}`}
+            loading="lazy"
+            class="h-full w-full object-cover transition duration-300 group-hover:scale-110"
+          />
+        </button>
+      ))}
+    </div>
+  </main>
+  <Footer />
+
+  <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-fondo/95 p-4" aria-hidden="true">
+    <button
+      type="button"
+      id="lightbox-cerrar"
+      class="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-fondo/80 text-2xl leading-none text-texto/90 backdrop-blur transition hover:text-acento"
+      aria-label="Cerrar"
+    >
+      &times;
+    </button>
+    <button
+      type="button"
+      id="lightbox-anterior"
+      class="absolute left-2 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-fondo/80 text-2xl leading-none text-texto/90 backdrop-blur transition hover:text-acento sm:left-6"
+      aria-label="Foto anterior"
+    >
+      &#8249;
+    </button>
+    <img id="lightbox-img" src="" alt="" class="max-h-[85vh] max-w-full rounded-lg object-contain" />
+    <button
+      type="button"
+      id="lightbox-siguiente"
+      class="absolute right-2 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-fondo/80 text-2xl leading-none text-texto/90 backdrop-blur transition hover:text-acento sm:right-6"
+      aria-label="Foto siguiente"
+    >
+      &#8250;
+    </button>
+  </div>
+
+  <script>
+    function activarGaleria() {
+      const items = Array.from(document.querySelectorAll<HTMLButtonElement>('.galeria-item'));
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
+      const btnCerrar = document.getElementById('lightbox-cerrar');
+      const btnAnterior = document.getElementById('lightbox-anterior');
+      const btnSiguiente = document.getElementById('lightbox-siguiente');
+      if (!items.length || !lightbox || !lightboxImg) return;
+
+      let indiceActual = 0;
+
+      function mostrar(indice: number) {
+        indiceActual = (indice + items.length) % items.length;
+        const img = items[indiceActual].querySelector('img');
+        if (img && lightboxImg) {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+        }
+      }
+
+      function abrir(indice: number) {
+        mostrar(indice);
+        lightbox!.classList.remove('hidden');
+        lightbox!.classList.add('flex');
+        lightbox!.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function cerrar() {
+        lightbox!.classList.add('hidden');
+        lightbox!.classList.remove('flex');
+        lightbox!.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      items.forEach((item, i) => {
+        item.addEventListener('click', () => abrir(i));
+      });
+      btnCerrar?.addEventListener('click', cerrar);
+      btnAnterior?.addEventListener('click', () => mostrar(indiceActual - 1));
+      btnSiguiente?.addEventListener('click', () => mostrar(indiceActual + 1));
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) cerrar();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (lightbox!.classList.contains('hidden')) return;
+        if (e.key === 'Escape') cerrar();
+        if (e.key === 'ArrowLeft') mostrar(indiceActual - 1);
+        if (e.key === 'ArrowRight') mostrar(indiceActual + 1);
+      });
+    }
+
+    activarGaleria();
+    document.addEventListener('astro:page-load', activarGaleria);
+  </script>
+</Layout>

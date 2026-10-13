@@ -98,6 +98,7 @@
             { "nombre": "Black Label", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
             { "nombre": "Cardhu 12", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
             { "nombre": "Gold Label", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 14 }, { "etiqueta": "Cubata", "valor": 18 }] },
+            { "nombre": "Blue Label", "precios": [{ "etiqueta": "Chupito", "valor": 30 }, { "etiqueta": "Copa", "valor": 40 }, { "etiqueta": "Cubata", "valor": 45 }] },
             { "nombre": "Four Roses", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
             { "nombre": "Tomatin", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
             { "nombre": "Glenfiddich", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
@@ -139,9 +140,9 @@
             { "nombre": "Santa Teresa", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
             { "nombre": "Legendario", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
             { "nombre": "Brugal Extraviejo", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 10 }] },
-            { "nombre": "Flor de Caña Extra Seco", "precios": [] },
+            { "nombre": "Flor de Caña Extra Seco", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
             { "nombre": "Carlos I", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 14 }] },
-            { "nombre": "Lepanto 12", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 16 }] }
+            { "nombre": "Lepanto 12", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] }
           ]
         },
         {
@@ -180,8 +181,8 @@
             { "nombre": "Sombrero Mexicano", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
             { "nombre": "José Cuervo", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
             { "nombre": "Pistolero", "precios": [{ "etiqueta": "Chupito", "valor": 3 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
-            { "nombre": "818 reposado", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] },
-            { "nombre": "818 blanco", "precios": [{ "etiqueta": "Chupito", "valor": 8 }, { "etiqueta": "Copa", "valor": 10 }, { "etiqueta": "Cubata", "valor": 14 }] }
+            { "nombre": "818 reposado", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 12 }, { "etiqueta": "Cubata", "valor": 16 }] },
+            { "nombre": "818 blanco", "precios": [{ "etiqueta": "Chupito", "valor": 10 }, { "etiqueta": "Copa", "valor": 12 }, { "etiqueta": "Cubata", "valor": 16 }] }
             
           ]
         },

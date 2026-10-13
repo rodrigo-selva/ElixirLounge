@@ -3,6 +3,7 @@ import info from '../data/info.json';
 
 const enlaces = [
   { href: '/carta', texto: 'Carta' },
+  { href: '/galeria', texto: 'Galería' },
   { href: '/horarios', texto: 'Horarios' },
   { href: '/contacto', texto: 'Contacto' },
 ];
@@ -12,11 +13,11 @@ const enlaces = [
   <nav class="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-4">
     <a href="/" class="flex items-center gap-2 whitespace-nowrap">
       <img src="/images/logo-mark.png" alt="" class="h-8 w-8 rounded-full" />
-      <span class="font-titulo text-sm font-light uppercase tracking-[0.12em] text-acento sm:text-lg sm:tracking-[0.2em]">
+      <span class="hidden font-titulo text-sm font-light uppercase tracking-[0.12em] text-acento sm:inline sm:text-lg sm:tracking-[0.2em]">
         {info.nombre}
       </span>
     </a>
-    <ul class="flex gap-3 text-xs sm:gap-5 sm:text-sm">
+    <ul class="flex gap-2 text-xs sm:gap-5 sm:text-sm">
       {enlaces.map((enlace) => (
         <li>
           <a
