@@ -189,7 +189,8 @@
         {
           "nombre": "Licores",
           "productos": [
-            { "nombre": "Baileys", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 5 }, { "etiqueta": "Cubata", "valor": 8 }] },
+            { "nombre": "Baileys", "precios": [{ "etiqueta": "Chupito", "valor": 2.5 }, { "etiqueta": "Copa", "valor": 4 }] },
+            { "nombre": "Limoncello", "precios": [{ "etiqueta": "Chupito", "valor": 2.5 }, { "etiqueta": "Copa", "valor": 4 }] },
             { "nombre": "Jägermeister naranja", "precios": [{ "etiqueta": "Chupito", "valor": 5 }, { "etiqueta": "Copa", "valor": 7 }, { "etiqueta": "Cubata", "valor": 10 }] },
             { "nombre": "Jägermeister", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 8 }] },
             { "nombre": "Disaronno", "precios": [{ "etiqueta": "Chupito", "valor": 4 }, { "etiqueta": "Copa", "valor": 6 }, { "etiqueta": "Cubata", "valor": 8 }] },
